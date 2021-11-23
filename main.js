@@ -9,9 +9,9 @@ img_x = 100;
 img_y = 100;
 
 function add() {
-	img_imgTag = new Image(); //defining a variable with a new image
-	img_imgTag.onload = uploadimg; // setting a function, onloading this variable
-	img_imgTag.src = img_image;   // load image
+	img_imgTag = new Image(); //definindo uma variável com uma nova imagem
+	img_imgTag.onload = uploadimg; // ajustando uma função, ao carregar essa variável
+	img_imgTag.src = img_image;   // carregar uma imagem
 }
 
 function uploadimg() {
@@ -19,7 +19,7 @@ function uploadimg() {
 	ctx.drawImage(img_imgTag, img_x, img_y, img_width, img_height);
 }
 
-//Write a code to grab the key-pressed event
+//Escreva um código para obter o evento key-pressed
 
 function my_keydown(e)
 {
@@ -27,7 +27,7 @@ function my_keydown(e)
 	console.log(keyPressed);
 	
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
-		//write a code to check the type of key pressed
+		//Escreva um código para verificar o tipo de tecla pressionada
 	else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
@@ -36,7 +36,7 @@ function my_keydown(e)
 
 function aplhabetkey()
 {
-	//upload respective image with the message. 
+	//envie as imagens com suas respectivas mensagens. 
 
 }
 function numberkey()
